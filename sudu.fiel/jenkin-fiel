@@ -1,0 +1,12 @@
+pipeline{
+    agent any
+
+    stages{
+        stage('chekout stage'){
+            steps{
+                git branch: 'dev', url: 'https://github.com/ManojKRISHNAPPA/octo-2025.git'
+            }
+        }
+    }
+
+}
